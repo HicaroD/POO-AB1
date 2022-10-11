@@ -15,7 +15,7 @@ class ContaEspecial extends ContaCorrente {
 
     @Override
     protected boolean sacar(double valor) {
-        if (valor + limite - saldo < 0) return false;
+        if (saldo + limite - valor < 0) return false;
         saldo -= valor;
         return true;
     }

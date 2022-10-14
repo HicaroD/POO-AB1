@@ -3,21 +3,21 @@ package questao2;
 import java.util.ArrayList;
 
 class Estacionamento {
-    private ArrayList<Carro> carros = new ArrayList<>();
+    private ArrayList<Car> cars = new ArrayList<>();
 
-    void adicionarCarro(Carro carro) {
-        carros.add(carro);
+    void adicionarCarro(Car car) {
+        cars.add(car);
     }
 
     int getQuantidadeDePessoasNoEstacionamento() {
         int totalDePessoas = 0;
-        for (Carro carro : carros) { 
-            totalDePessoas += carro.getQuantidadeDePessoasNoCarro();
+        for (Car car : cars) { 
+            totalDePessoas += car.getPersonQuantity();
         }
         return totalDePessoas;
     }
 
     void listarCarrosNoEstacionamento() {
-        for (Carro carro : carros) System.out.println(carro);
+        for (Car car : cars) System.out.println(car);
     }
 }

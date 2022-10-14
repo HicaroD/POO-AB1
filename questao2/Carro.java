@@ -1,37 +1,58 @@
 package questao2;
 
-class Carro {
-    private String modelo;
-    private int ano;
-    private int quantidadeDePessoas;
-    private int capacidadeMaxima;
+class Car {
+    private String model;
+    private int year;
+    private int personQuantity;
+    private int maximumCapacity;
 
-    public Carro(String modelo, int ano, int quantidadeDePessoas, int capacidadeMaxima) {
-        if(quantidadeDePessoas > capacidadeMaxima) {
-            System.out.println(String.format("O carro do modelo %s não consegue suportar mais de %d pessoas", modelo, capacidadeMaxima));
+    public Car(String model, int year, int personQuantity, int maximumCapacity) {
+        if (personQuantity > maximumCapacity) {
+            System.out.println(String.format("O carro do modelo %s não consegue suportar mais de %d pessoas", model,
+                    maximumCapacity));
             System.exit(1);
         }
-        this.modelo = modelo;
-        this.ano = ano;
-        this.quantidadeDePessoas = quantidadeDePessoas;
-        this.capacidadeMaxima = capacidadeMaxima;
+        this.model = model;
+        this.year = year;
+        this.personQuantity = personQuantity;
+        this.maximumCapacity = maximumCapacity;
     }
 
-    int getQuantidadeDePessoasNoCarro() {
-        return quantidadeDePessoas;
+    public String getModel() {
+        return model;
     }
 
-    public String getModelo() {
-        return modelo;
+    public void setModel(String model) {
+        this.model = model;
     }
 
-    public int getAno() {
-        return ano;
+    public int getYear() {
+        return year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    public int getPersonQuantity() {
+        return personQuantity;
+    }
+
+    public void setPersonQuantity(int personQuantity) {
+        this.personQuantity = personQuantity;
+    }
+
+    public int getMaximumCapacity() {
+        return maximumCapacity;
+    }
+
+    public void setMaximumCapacity(int maximumCapacity) {
+        this.maximumCapacity = maximumCapacity;
     }
 
     @Override
     public String toString() {
-        return String.format("-=-=-=-=-=-=-=-=\nModelo: %s\nAno: %d\nQuantidade de pessoas: %d\n-=-=-=-=-=", modelo,
-                ano, quantidadeDePessoas);
+        return String.format("-=-=-=-=-=-=-=-=\nModelo: %s\nAno: %d\nQuantidade de pessoas: %d\n-=-=-=-=-=", model,
+                year, personQuantity);
     }
 }

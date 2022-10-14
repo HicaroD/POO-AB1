@@ -2,7 +2,7 @@ package questao3;
 
 class Google extends PlataformaSingleSignOn {
     @Override
-    public void logar() {
+    public void login() {
         System.out.println("Logando com Google");
     }
 }

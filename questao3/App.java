@@ -12,6 +12,6 @@ class App {
     }
 
     public void logar() {
-        login.logar();
+        login.login();
     }
 }

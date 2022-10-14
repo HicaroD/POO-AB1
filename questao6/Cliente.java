@@ -6,6 +6,11 @@ class Cliente {
     private String nome;
     private ArrayList<ContaCorrente> contas;
 
+    public Cliente() {
+        this.nome = "";
+        this.contas = new ArrayList<>();
+    }
+
     public Cliente(String nome, ArrayList<ContaCorrente> contas) {
         this.nome = nome;
         this.contas = contas;

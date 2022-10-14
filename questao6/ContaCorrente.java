@@ -2,6 +2,7 @@ package questao6;
 
 class ContaCorrente {
     protected double saldo;
+
     ContaCorrente() {
         saldo = 0;
     }

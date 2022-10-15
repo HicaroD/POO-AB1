@@ -1,13 +1,13 @@
 package questao5;
 
 public abstract class UFALBluetooth { 
-    void abrirConexao() {
+    void openConnection() {
         System.out.println("Abrindo conexão");
     }
 
-    abstract void processarDados();
+    abstract void processData();
 
-    void fecharConexao() {
+    void closeConnection() {
         System.out.println("Fechando conexão");
     }
 }

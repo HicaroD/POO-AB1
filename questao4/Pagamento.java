@@ -1,13 +1,13 @@
 package questao4;
 
 class Pagamento {
-    private MetodoDePagamento metodoDePagamento;
+    private PaymentMethod metodoDePagamento;
 
-    public Pagamento(MetodoDePagamento metodoDePagamento) {
+    public Pagamento(PaymentMethod metodoDePagamento) {
         this.metodoDePagamento = metodoDePagamento;
     }
 
-    public void setMetodoDePagamento(MetodoDePagamento metodoDePagamento) {
+    public void setPaymentMethod(PaymentMethod metodoDePagamento) {
         this.metodoDePagamento = metodoDePagamento;
     }
 

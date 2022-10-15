@@ -6,8 +6,8 @@ public class Main {
         Pagamento pagamento = new Pagamento(pix);
         pagamento.pagar();
 
-        Boleto boleto = new Boleto();
-        pagamento.setMetodoDePagamento(boleto);
+        PaymentMethod boleto = new PaymentSlip();
+        pagamento.setPaymentMethod(boleto);
         pagamento.pagar();
     } 
 }

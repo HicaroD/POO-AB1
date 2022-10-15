@@ -2,30 +2,30 @@ package questao6;
 
 import java.util.ArrayList;
 
-class Cliente {
-    private String nome;
-    private ArrayList<ContaCorrente> contas;
+class Client {
+    private String name;
+    private ArrayList<CheckingAccount> accounts;
 
-    public Cliente() {
-        this.nome = "";
-        this.contas = new ArrayList<>();
+    public Client() {
+        this.name = "";
+        this.accounts = new ArrayList<>();
     }
 
-    public Cliente(String nome, ArrayList<ContaCorrente> contas) {
-        this.nome = nome;
-        this.contas = contas;
+    public Client(String name, ArrayList<CheckingAccount> accounts) {
+        this.name = name;
+        this.accounts = accounts;
     }
 
-    public String getNome() {
-        return nome;
+    public String getName() {
+        return name;
     }
 
-    public ArrayList<ContaCorrente> getContas() {
-        return contas;
+    public ArrayList<CheckingAccount> getAccounts() {
+        return accounts;
     }
 
     @Override
     public String toString() {
-        return String.format("Nome do cliente: %s\n", nome);
+        return String.format("Nome do cliente: %s\n", name);
     }
 }

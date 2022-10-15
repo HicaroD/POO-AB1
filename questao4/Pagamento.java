@@ -1,9 +1,9 @@
 package questao4;
 
-class Pagamento {
+class Payment {
     private PaymentMethod metodoDePagamento;
 
-    public Pagamento(PaymentMethod metodoDePagamento) {
+    public Payment(PaymentMethod metodoDePagamento) {
         this.metodoDePagamento = metodoDePagamento;
     }
 
@@ -11,7 +11,7 @@ class Pagamento {
         this.metodoDePagamento = metodoDePagamento;
     }
 
-    public void pagar() {
-        metodoDePagamento.pagar();
+    public void pay() {
+        metodoDePagamento.pay();
     }
 }

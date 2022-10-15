@@ -1,22 +1,22 @@
 class Item {
-    private String nome;
-    private double valor;
+    private String name;
+    private double value;
 
-    Item(String nome, double valor) {
-        this.nome = nome;
-        this.valor = valor;
+    Item(String name, double value) {
+        this.name = name;
+        this.value = value;
     }
 
     public String getNome() {
-        return nome;
+        return name;
     }
 
-    public double getValor() {
-        return valor;
+    public double getValue() {
+        return value;
     }
 
     @Override
     public String toString() {
-        return String.format("\t- Nome do item: %s\n\t- Valor do item: %f", nome, valor);
+        return String.format("\t- Nome do item: %s\n\t- value do item: %f", name, value);
     }
 }

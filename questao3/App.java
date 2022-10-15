@@ -11,7 +11,7 @@ class App {
         this.login = login;
     }
 
-    public void logar() {
+    public void login() {
         login.login();
     }
 }

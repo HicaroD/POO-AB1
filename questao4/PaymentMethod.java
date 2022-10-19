@@ -1,5 +1,5 @@
 package questao4;
 
-public abstract class PaymentMethod {
-    public abstract void pay();
+interface PaymentMethod {
+    void pay();
 }
